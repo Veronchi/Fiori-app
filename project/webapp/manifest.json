@@ -125,6 +125,14 @@
               "dateSettings": {
                 "useDateRange": true
               }
+            },
+            "tableSettings": {
+              "multiSelect": true,
+              "copy": false,
+              "type": "ResponsiveTable"
+            },
+            "dataLoadSettings": {
+              "loadDataOnAppLaunch": "always"
             }
           }
         },
