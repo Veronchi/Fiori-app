@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:smartfilterbar="sap.ui.comp.smartfilterbar" xmlns:core="sap.ui.core">
+<smartfilterbar:ControlConfiguration groupId="_BASIC" 
+    key="DateField"
+    label="{i18n>ReleaseDateLabel}"
+    visibleInAdvancedArea="true"
+    >
+    <smartfilterbar:customControl>
+        <DateRangeSelection
+            id="releaseDate"
+            displayFormat="dd-MM-yyyy"
+        />
+    </smartfilterbar:customControl>
+</smartfilterbar:ControlConfiguration>
+</core:FragmentDefinition>
