@@ -23,9 +23,6 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="Description"/>
                         </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="Price"/>
-                        </Record>
                         <Record Type="UI.DataFieldForAnnotation">
                             <PropertyValue Property="Value" Path="Rating"/>
                             <PropertyValue Property="Target" AnnotationPath="@UI.DataPoint#Rating"/>
