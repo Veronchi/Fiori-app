@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" 
+    xmlns="sap.m">
+	<ObjectNumber
+		state="{= ${DiscontinuedDate} ? 'Error' : 'Success' }"
+		number="{Price}"
+    />
+</core:FragmentDefinition>

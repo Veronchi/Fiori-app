@@ -115,8 +115,19 @@
                             "className": "sap.ui.core.Fragment",
                             "fragmentName": "veronchi.leverx.project.ext.fragments.ReleaseDateFilter",
                             "type": "XML"
+                        },
+                        "ResponsiveTableColumnsExtension|Products": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "veronchi.leverx.project.ext.fragments.ResponsiveTableColumns",
+                            "type": "XML"
+                        },
+                        "ResponsiveTableCellsExtension|Products": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "veronchi.leverx.project.ext.fragments.ResponsiveTableCells",
+                            "type": "XML"
                         }
-                    }
+                    },
+                    "sap.suite.ui.generic.template.ObjectPage.view.Details": {}
                 }
             }
         }
