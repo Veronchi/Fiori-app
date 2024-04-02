@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1711976325847_1352_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "veronchi.leverx.project",
+    "packageName": "",
+    "content": {
+        "property": "visible",
+        "newValue": false
+    },
+    "selector": {
+        "id": "veronchi.leverx.project::sap.suite.ui.generic.template.ListReport.view.ListReport::Products--template::Share",
+        "idIsLocal": false,
+        "type": "sap.m.Button"
+    },
+    "layer": "CUSTOMER_BASE",
+    "texts": {},
+    "namespace": "apps/veronchi.leverx.project/changes/",
+    "projectId": "",
+    "creation": 1711976325847,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "1.122.0",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "0.0.1",
+        "to": "0.0.1",
+        "creation": "0.0.1"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}

@@ -104,8 +104,18 @@
         },
         "extends": {
             "extensions": {
+                "sap.ui.controllerExtensions": {
+                    "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+                        "controllerName": "veronchi.leverx.project.ext.controller.ListReportExt"
+                    }
+                },
                 "sap.ui.viewExtensions": {
                     "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+                        "SmartFilterBarControlConfigurationExtension|Products": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "veronchi.leverx.project.ext.fragments.ReleaseDateFilter",
+                            "type": "XML"
+                        },
                         "ResponsiveTableColumnsExtension|Products": {
                             "className": "sap.ui.core.Fragment",
                             "fragmentName": "veronchi.leverx.project.ext.fragments.ResponsiveTableColumns",
