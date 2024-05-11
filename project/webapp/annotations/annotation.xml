@@ -36,7 +36,7 @@
                     </Collection>
                 </Annotation>
                 <Annotation Term="UI.DataPoint" Qualifier="Rating">
-                    <Record>
+                    <Record Type="UI.DataPointType">
                         <PropertyValue Property="Value" Path="Rating"/>
                         <PropertyValue Property="TargetValue" Int="5"/>
                         <PropertyValue Property="Visualization" EnumMember="UI.VisualizationType/Rating"/>
@@ -46,6 +46,72 @@
                     <Collection>
                         <PropertyPath>Supplier/Name</PropertyPath>
                         <PropertyPath>Category/Name</PropertyPath>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.HeaderInfo">
+                    <Record Type="UI.HeaderInfoType">
+                        <PropertyValue Property="TypeName" String="{@i18n>ProductTitle}"/>
+                        <PropertyValue Property="TypeNamePlural" String="{@i18n>ProductsTitle}"/>
+                        <PropertyValue Property="Title">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="Name"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="Description">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="Description"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.HeaderFacets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Target" AnnotationPath="@UI.DataPoint#Price"/>
+                        </Record>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Target" AnnotationPath="@UI.DataPoint#Rating"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="Price">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="{@i18n>priceText}"/>
+                        <PropertyValue Property="Value" Path="Price"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="Suppliers">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>SuppliersName}"/>
+                                    <PropertyValue Property="Value" Path="Supplier/Name"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>SuppliersCountry}"/>
+                                    <PropertyValue Property="Value" Path="Supplier/Address/Country"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>SuppliersState}"/>
+                                    <PropertyValue Property="Value" Path="Supplier/Address/State"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="{@i18n>SuppliersCity}"/>
+                                    <PropertyValue Property="Value" Path="Supplier/Address/City"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="{@i18n>SuppliersFieldLabel}"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="{@i18n>SuppliersFieldLabel}"/>
+                            <PropertyValue Property="ID" String="suppliersField"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#Suppliers"/>
+                        </Record>
                     </Collection>
                 </Annotation>
             </Annotations>
